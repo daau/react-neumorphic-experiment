@@ -1,26 +1,30 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import styled from 'styled-components';
+import Button from './components/Button';
+import Input from './components/Input';
+// import TextField from './components/TextField';
+// import RadioButton from './components/RadioButton';
+// import Checkbox from './components/Checkbox';
 
-function App() {
+
+const App = ({className}) => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={className}>
+      <div>
+        <h1>Button</h1>
+        <Button>Hello world</Button>
+      </div>
+      <div>
+        <h1>Input field</h1>
+        <Input/>
+      </div>
     </div>
   );
 }
 
-export default App;
+const StyledApp = styled(App)`
+  padding: 100px;
+  background-color: ${props => props.theme.bgColor};
+`;
+
+export default StyledApp;
