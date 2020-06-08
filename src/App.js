@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import Button from './components/Button';
+import Button, { ButtonDigital, ButtonDigitalBlue } from './components/Button';
 import Input from './components/Input';
 // import TextField from './components/TextField';
 // import RadioButton from './components/RadioButton';
@@ -14,6 +14,14 @@ const App = ({className}) => {
         <h1>Button</h1>
         <Button>Hello world</Button>
       </div>
+      <div>
+        <h1>ButtonDigital</h1>
+        <ButtonDigital>Hello world</ButtonDigital>
+      </div>
+      <div>
+        <h1>ButtonDigital</h1>
+        <ButtonDigitalBlue>Hello world</ButtonDigitalBlue>
+      </div>      
       <div>
         <h1>Input field</h1>
         <Input/>
