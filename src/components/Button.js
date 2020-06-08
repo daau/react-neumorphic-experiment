@@ -69,26 +69,25 @@ export const ButtonDigitalBlue = styled.button`
   color: white;
 
   &:active {
-    box-shadow: inset 0px 0px 9px 0px rgb(111,111,111);
-  };  
-
-
+    box-shadow: inset 0px 0px 9px 0px rgb(111,111,111), inset 0px 15px 15px 0px rgba(0, 0, 0, 0.2);
+  };
 `;
 
-export const ButtonDigitalTwo = styled.button`
+export const ButtonDigitalBlueTwo = styled.button`
+  background-image: linear-gradient(to right, #67b9ff 0%, #2e9bf7 100%);
+  box-shadow: inset 0 1px 3px #ffffffa8, inset 0px -1px 3px #6d6d6d94, 0 0 1px 2px #676767;
+  border: 2px solid dimgrey;
   width: 200px;
   height: 60px;
   outline: none;
-  border: 3px solid #757575;
   border-radius: 5px;
+  border: none;
   font-size: 20px;
-  font-weight: 600;
-  box-shadow: inset 0px 2px 0px rgb(255, 255, 255);
+  color: white;
+
   &:active {
-    color: blue;
-    // border: 5px solid #757575;
-    box-shadow: inset 0px 2px 0px rgb(255, 255, 255);
-  }
+    box-shadow: inset 0px 0px 9px 0px rgb(111,111,111), inset 0px 15px 15px 0px rgba(0, 0, 0, 0.2), 0 0 1px 2px #676767;
+  };
 `;
 
 export default Button;

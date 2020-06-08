@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import FormPage from './FormPage';
 import { Normalize } from 'styled-normalize'
 import { ThemeProvider } from 'styled-components';
 import * as serviceWorker from './serviceWorker';
