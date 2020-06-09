@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import Login, {StyledLogin} from './Login';
 import FormPage from './FormPage';
 import { Normalize } from 'styled-normalize'
 import { ThemeProvider } from 'styled-components';
@@ -19,14 +20,14 @@ const theme = {
   greyDark: "#9baacf",
 
   shadow: ".3rem .3rem .6rem #c8d0e7",
-  bgColor: "#f2f2f2",
+  bgColor: "#ebebf0",
 }
 
 ReactDOM.render(
   <React.StrictMode>
     <Normalize />    
     <ThemeProvider theme={theme}>
-      <App />
+      <StyledLogin />
     </ThemeProvider>
   </React.StrictMode>,
   document.getElementById('root')

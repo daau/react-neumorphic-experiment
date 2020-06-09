@@ -6,11 +6,16 @@ export const Input = styled.input`
   border: none;
   outline: none;
   padding: 18.5px 14px;
+  font-size: 14px;
   width: 100%;
-  background-color: ${props => props.theme.bgColor};
-  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.02);
-    box-shadow: inset 0px -2px 5px rgb(255, 255, 255),
-      inset 0px 2px 5px rgba(0, 0, 0, 0.15);
+  box-sizing: border-box;
+  background-image: linear-gradient(to right, #ebebf0, #e5e5e8);
+  border-radius: 10px;
+  box-shadow: inset -3px -3px 6px 0px rgba(255, 255, 255, 0.95), inset 2px 2px 5px rgba(42, 86, 125, 0.37);
+
+  ::placeholder {
+    color: #b7b7b7;
+  }
 `;
 
 export default Input;
